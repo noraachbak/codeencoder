@@ -7,14 +7,14 @@ int i=0,count=0;
 for(i=0; i<strlen(frame); i++)
  {  //si on a valeur 1
     if(frame[i]=='1')
-    //On incrémente la valeur de count
+    //On incrÃ©mente la valeur de count
         count++;
     else
         count=0;
     printf("%c",frame[i]);
-    //Si on a 5 bits de meme valeur
+    //Si on a 5 bits de mÃªme valeur
     if(count==5) 
-    {//On ajoute un bit de valeur opposé
+    {//On ajoute un bit de valeur opposÃ©
         printf("0");
         count=0;
     }
