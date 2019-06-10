@@ -3,16 +3,18 @@
 
 void encoder(char frame[80] ){
 	
-	int i=0,count=0;
+int i=0,count=0;
 for(i=0; i<strlen(frame); i++)
- {
+ {  //si on a valeur 1
     if(frame[i]=='1')
+    //On incrémente la valeur de count
         count++;
     else
         count=0;
     printf("%c",frame[i]);
-    if(count==5)
-    {
+    //Si on a 5 bits de meme valeur
+    if(count==5) 
+    {//On ajoute un bit de valeur opposé
         printf("0");
         count=0;
     }
