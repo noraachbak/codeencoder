@@ -18,10 +18,7 @@ for(i=0; i<strlen(frame); i++)
         printf("0");
         count=0;
     }
- }
- 
-	
-	
+ }	
 }
 
 
